@@ -22818,14 +22818,14 @@ function OrderOfDay() {
                             className: "font-display text-3xl md:text-4xl text-foreground mb-1",
                             children: stg.label
                         }), h.jsx("p", {
-                            className: "font-body text-sm tracking-[0.15em] uppercase text-foreground/50 mb-2",
+                            className: "font-body text-sm tracking-[0.25em] uppercase text-foreground/50 mb-2",
                             children: stg.time
                         }), h.jsx("p", {
                             className: "font-body text-foreground/60 italic",
                             children: stg.detail
                         })]
                     }), idx < stages.length - 1 && h.jsx("div", {
-                        className: "w-px h-8 bg-foreground/20 mx-auto mt-8"
+                        className: "w-px h-8 bg-foreground/15 mx-auto mt-8"
                     })]
                 }, stg.label))
             })]
@@ -23094,7 +23094,10 @@ function OD_DressAnim() {
         const n = setInterval(() => t(r => (r + 1) % 2), 600);
         return () => clearInterval(n)
     }, []), h.jsxs("div", {
-        className: "relative w-full max-w-[420px] aspect-[3/2] mx-auto mb-10",
+        className: "relative w-full max-w-[420px] mx-auto mb-10",
+        style: {
+            aspectRatio: "3 / 2"
+        },
         children: [h.jsx(ut, {
             src: DF1.url,
             alt: "Dress code illustration",
@@ -32318,7 +32321,7 @@ function UU() {
                         }), h.jsx(It, {
                             type: "submit",
                             disabled: v.isPending,
-                            className: "relative z-10 w-full bg-foreground hover:bg-foreground/90 text-background font-body tracking-[0.15em] uppercase text-sm py-6 rounded-lg",
+                            className: "relative z-10 w-full bg-foreground hover:bg-foreground/90 text-background font-body tracking-[0.25em] uppercase text-sm py-6 rounded-lg",
                             children: v.isPending ? e("rsvp.sending") : h.jsxs("span", {
                                 className: "flex items-center gap-2",
                                 children: [h.jsx(AA, {
