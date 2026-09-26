@@ -23079,7 +23079,7 @@ const X3 = "59cfe8ac-5463-4f24-bd50-46c0508ad4ee",
     }, {
         title: "Reception",
         date: "17th October 2026",
-        attire: "Black Tie / Formal Evening Wear"
+        attire: "Wear Colors / Formal Evening Wear"
     }],
     DF1 = {
         url: "./assets/l5e-images/dresscode-frame-1.png"
@@ -23163,8 +23163,11 @@ function lF() {
                     children: "Dress Code"
                 }), h.jsx("p", {
                     className: "font-body text-sm tracking-[0.25em] uppercase text-foreground/50 mb-8",
-                    children: "Formal / Black Tie Optional"
-                }), h.jsx(OD_DressAnim, {}), h.jsx("div", {
+                    children: "Formal / Wear Colors"
+                }), h.jsx(OD_DressAnim, {}), h.jsx("p", {
+                    className: "font-body text-foreground/70 leading-relaxed max-w-md mx-auto mb-10",
+                    children: "We would love for guests to embrace a formal look for our celebration"
+                }), h.jsx("div", {
                     className: "space-y-8",
                     children: aF.map(e => h.jsxs("div", {
                         className: "bg-foreground/[0.03] border border-foreground/10 rounded-2xl px-6 py-10 md:px-10 md:py-14",
