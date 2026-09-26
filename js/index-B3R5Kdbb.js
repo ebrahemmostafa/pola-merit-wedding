@@ -22119,71 +22119,87 @@ function p5({
         }), h.jsx("div", {
             className: "absolute inset-x-0 bottom-0 h-40 md:h-56 z-10 pointer-events-none bg-gradient-to-b from-transparent to-background"
         }), h.jsxs("div", {
-            className: "absolute inset-0 z-20 flex flex-col items-center justify-start text-center px-6 pt-32 md:pt-40 transition-opacity ease-out",
+            className: "absolute inset-0 z-20 flex flex-col items-center justify-start text-center px-6 transition-opacity ease-out",
             style: {
                 opacity: s ? 1 : 0,
-                transitionDuration: "1800ms"
+                transitionDuration: "1800ms",
+                paddingTop: "clamp(2.5rem, 9vh, 6rem)"
             },
-            children: [h.jsxs("div", {
-                className: "mb-6 max-w-[260px] md:max-w-xs mx-auto",
+            children: h.jsxs("div", {
+                className: "flex flex-col items-center",
+                style: {
+                    width: "100%",
+                    maxWidth: "340px",
+                    padding: "1.5rem 1.25rem",
+                    borderRadius: "24px",
+                    background: "rgba(246, 244, 238, 0.84)",
+                    backdropFilter: "blur(3px)",
+                    WebkitBackdropFilter: "blur(3px)",
+                    border: "1px solid hsl(var(--champagne-rose) / 0.6)",
+                    boxShadow: "0 8px 30px -12px rgba(58, 85, 66, 0.25)"
+                },
+                children: [h.jsxs("div", {
+                className: "mb-4 mx-auto",
                 children: [h.jsx("p", {
-                    className: "font-body italic text-primary/80 text-[11px] md:text-sm leading-relaxed",
+                    className: "font-body italic text-primary text-sm md:text-base leading-relaxed",
                     children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
                 }), h.jsx("p", {
-                    className: "font-body text-primary/60 text-[11px] tracking-[0.2em] uppercase mt-2",
+                    className: "font-body text-primary/80 text-[11px] tracking-[0.2em] uppercase mt-2",
                     children: "— Matthew 19:6"
-                })]
-            }), h.jsxs("div", {
-                className: "mb-4 select-none flex items-center justify-center gap-1",
-                children: [h.jsx("span", {
-                    className: "font-display text-4xl md:text-5xl text-primary leading-none",
-                    children: "M"
-                }), h.jsx("span", {
-                    className: "font-display text-4xl md:text-5xl text-primary italic leading-none",
-                    children: "P"
+                }), h.jsx("div", {
+                    style: {
+                        width: "40px",
+                        height: "1px",
+                        margin: "0.75rem auto 0",
+                        background: "hsl(var(--champagne-rose))"
+                    }
                 })]
             }), h.jsxs("h2", {
-                className: "font-display font-normal md:text-7xl leading-[0.95] mb-5 text-6xl text-primary",
+                className: "font-display font-normal md:text-7xl leading-[0.95] mb-3 text-5xl text-primary",
                 children: ["Merit ", h.jsx("span", {
                     className: "italic",
+                    style: {
+                        color: "hsl(var(--champagne-rose))"
+                    },
                     children: "&"
                 }), " Pola"]
             }), h.jsxs("p", {
                 className: "font-body md:text-xs tracking-[0.2em] uppercase text-primary max-w-[260px] md:max-w-xs leading-snug text-[11px] font-medium",
                 children: ["INVITE YOU TO CELEBRATE ", h.jsx("br", {}), "OUR WEDDING DAY"]
             }), h.jsx("p", {
-                className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary mt-3 font-medium",
+                className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary mt-2 font-medium",
                 children: "in"
             }), h.jsx("p", {
                 className: "font-display md:text-4xl text-primary mt-1 text-3xl leading-none",
                 children: "Cairo, Egypt"
             }), h.jsxs("div", {
-                className: "flex items-center justify-center gap-3 mt-3 text-primary",
+                className: "flex items-center justify-center gap-3 mt-2 text-primary",
                 children: [h.jsxs("div", {
                     className: "flex flex-col items-center",
                     children: [h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mb-1"
-                    }), h.jsx("span", {
-                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium",
-                        children: "Church · 5:30 PM"
+                    }), h.jsxs("span", {
+                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium whitespace-nowrap",
+                        children: ["Church", h.jsx("br", {}), "5:30 PM"]
                     }), h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mt-1"
                     })]
                 }), h.jsx("span", {
-                    className: "font-display md:text-5xl font-light leading-none text-5xl text-primary",
+                    className: "font-display md:text-5xl font-light leading-none text-4xl text-primary whitespace-nowrap",
                     children: "17 Oct"
                 }), h.jsxs("div", {
                     className: "flex flex-col items-center",
                     children: [h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mb-1"
-                    }), h.jsx("span", {
-                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium",
-                        children: "Reception · 8:00 PM"
+                    }), h.jsxs("span", {
+                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium whitespace-nowrap",
+                        children: ["Reception", h.jsx("br", {}), "8:00 PM"]
                     }), h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mt-1"
                     })]
                 })]
             })]
+            })
         }), h.jsx("div", {
             className: "relative z-30 flex-1 flex flex-col items-center justify-end pointer-events-none",
             children: h.jsxs(he.button, {
@@ -22633,8 +22649,11 @@ const l3 = "2dcf5ad4-79dd-4a9b-89aa-c10ee9239b45",
     };
 
 const ChurchLight = {
-    url: "./assets/l5e-images/church-light.png"
-};
+        url: "./assets/l5e-images/church-light.png"
+    },
+    VillaIllustration = {
+        url: "./assets/l5e-images/villa-illustration.png"
+    };
 
 function q3() {
     const e = m.useRef(null),
@@ -22725,10 +22744,10 @@ function q3() {
                             aspectRatio: "3 / 4"
                         }
                     }), n.label === "Reception" && h.jsx(ut, {
-                        src: C3.url,
+                        src: VillaIllustration.url,
                         alt: "",
                         loading: "lazy",
-                        className: "mx-auto w-40 md:w-48 h-auto mb-4 pointer-events-none select-none"
+                        className: "mx-auto w-44 md:w-56 h-auto mb-4 pointer-events-none select-none"
                     }), h.jsx("h3", {
                         className: "font-display text-4xl md:text-5xl text-foreground mb-3 leading-tight",
                         children: n.label
@@ -23277,7 +23296,10 @@ function KidsNote() {
                 },
                 children: "We love your little ones! We kindly ask that children remain at home, wishing them sweet dreams."
             }), h.jsx("p", {
-                className: "font-display text-4xl md:text-5xl text-background",
+                className: "font-display text-4xl md:text-5xl",
+                style: {
+                    color: "hsl(var(--champagne-rose))"
+                },
                 children: "See you there!"
             })]
         })
@@ -23354,7 +23376,7 @@ function wF() {
                     className: "block mt-3 font-body text-sm tracking-[0.25em] uppercase text-foreground/50 hover:text-foreground transition-colors underline underline-offset-2",
                     children: "View on Map"
                 }), h.jsx(ut, {
-                    src: yF.url,
+                    src: VillaIllustration.url,
                     alt: "Venue illustration",
                     loading: "lazy",
                     className: "w-full max-w-[320px] mx-auto h-auto mt-8 select-none",
@@ -32457,7 +32479,10 @@ function ZU({
             }), h.jsxs("p", {
                 className: "font-display text-5xl md:text-6xl text-foreground mb-4 leading-tight",
                 children: [e, " ", h.jsx("span", {
-                    className: "text-3xl md:text-4xl text-foreground/50 italic",
+                    className: "text-3xl md:text-4xl italic",
+                    style: {
+                        color: "hsl(var(--champagne-rose))"
+                    },
                     children: "&"
                 }), " ", t]
             }), h.jsx("p", {
@@ -32539,13 +32564,16 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                         className: "font-display font-normal text-6xl md:text-7xl leading-[0.95] text-primary [text-shadow:_0_1px_8px_rgba(71,84,58,0.6),_0_0_22px_rgba(71,84,58,0.4)]",
                         children: ["Merit ", h.jsx("span", {
                             className: "italic",
+                            style: {
+                                color: "hsl(var(--champagne-rose))"
+                            },
                             children: "&"
                         }), " Pola"]
                     })]
                 })
             }), r === "playing" && h.jsx("button", {
                 onClick: v => {
-                    v.stopPropagation(), c()
+                    v.stopPropagation(), d()
                 },
                 className: "absolute bottom-6 right-6 bg-secondary/90 text-primary px-5 py-2 rounded-full font-body text-sm tracking-wide backdrop-blur-sm border border-muted/30 shadow-lg hover:bg-secondary transition-all duration-300",
                 children: "Skip"
