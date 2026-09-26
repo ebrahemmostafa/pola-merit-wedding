@@ -22632,6 +22632,10 @@ const l3 = "2dcf5ad4-79dd-4a9b-89aa-c10ee9239b45",
         version: K3
     };
 
+const ChurchLight = {
+    url: "./assets/l5e-images/church-light.png"
+};
+
 function q3() {
     const e = m.useRef(null),
         t = [{
@@ -22713,10 +22717,13 @@ function q3() {
                     },
                     className: "text-center px-4",
                     children: [n.label === "Church Ceremony" && h.jsx(ut, {
-                        src: G3.url,
-                        alt: "",
+                        src: ChurchLight.url,
+                        alt: "St. Mary Garden City Church",
                         loading: "lazy",
-                        className: "mx-auto w-44 md:w-52 h-auto mb-4 pointer-events-none select-none"
+                        className: "mx-auto w-44 md:w-56 rounded-2xl shadow-lg mb-4 object-cover select-none",
+                        style: {
+                            aspectRatio: "3 / 4"
+                        }
                     }), n.label === "Reception" && h.jsx(ut, {
                         src: C3.url,
                         alt: "",
