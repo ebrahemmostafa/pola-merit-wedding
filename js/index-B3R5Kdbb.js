@@ -22124,10 +22124,15 @@ function p5({
                 opacity: s ? 1 : 0,
                 transitionDuration: "1800ms"
             },
-            children: [h.jsx("img", {
-                src: h5.url,
-                alt: "Merit & Pola monogram",
-                className: "w-16 md:w-20 h-auto mb-4 select-none pt-[20px]"
+            children: [h.jsxs("div", {
+                className: "mb-4 select-none flex items-center justify-center gap-1",
+                children: [h.jsx("span", {
+                    className: "font-display text-4xl md:text-5xl text-primary leading-none",
+                    children: "M"
+                }), h.jsx("span", {
+                    className: "font-display text-4xl md:text-5xl text-primary italic leading-none",
+                    children: "P"
+                })]
             }), h.jsxs("h2", {
                 className: "font-display font-normal md:text-7xl leading-[0.95] mb-5 text-6xl text-primary",
                 children: ["Merit ", h.jsx("span", {
@@ -22168,6 +22173,15 @@ function p5({
                     }), h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mt-1"
                     })]
+                })]
+            }), h.jsxs("div", {
+                className: "mt-8 max-w-[260px] md:max-w-xs mx-auto",
+                children: [h.jsx("p", {
+                    className: "font-body italic text-primary/80 text-[11px] md:text-sm leading-relaxed",
+                    children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
+                }), h.jsx("p", {
+                    className: "font-body text-primary/60 text-[11px] tracking-[0.2em] uppercase mt-2",
+                    children: "— Matthew 19:6"
                 })]
             })]
         }), h.jsx("div", {
@@ -32424,10 +32438,15 @@ function ZU({
             transition: {
                 duration: .8
             },
-            children: [h.jsx("img", {
-                src: JU.url,
-                alt: "Merit & Pola monogram",
-                className: "w-24 md:w-28 h-auto mx-auto mb-8 pointer-events-none select-none"
+            children: [h.jsxs("div", {
+                className: "mb-8 select-none flex items-center justify-center gap-2",
+                children: [h.jsx("span", {
+                    className: "font-display text-6xl md:text-7xl text-foreground leading-none",
+                    children: "M"
+                }), h.jsx("span", {
+                    className: "font-display text-6xl md:text-7xl text-foreground italic leading-none",
+                    children: "P"
+                })]
             }), h.jsxs("p", {
                 className: "font-display text-5xl md:text-6xl text-foreground mb-4 leading-tight",
                 children: [e, " ", h.jsx("span", {
