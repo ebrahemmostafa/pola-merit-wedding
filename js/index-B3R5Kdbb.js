@@ -22036,7 +22036,7 @@ const HL = {
     qL = 1,
     XL = "dc30d580-2216-4eb3-a4e5-1ff5858e7710",
     QL = "468e6815-3729-4bb3-a56d-9c8683062112",
-    YL = "./assets/l5e-images/hero-bow-final-v2.jpg",
+    YL = "./assets/l5e-images/bellagio-2-final.jpg",
     JL = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/dc30d580-2216-4eb3-a4e5-1ff5858e7710/hero-bow-final-v2.jpg",
     ZL = "hero-bow-final-v2.jpg",
     e5 = 428885,
@@ -22125,6 +22125,15 @@ function p5({
                 transitionDuration: "1800ms"
             },
             children: [h.jsxs("div", {
+                className: "mb-6 max-w-[260px] md:max-w-xs mx-auto",
+                children: [h.jsx("p", {
+                    className: "font-body italic text-primary/80 text-[11px] md:text-sm leading-relaxed",
+                    children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
+                }), h.jsx("p", {
+                    className: "font-body text-primary/60 text-[11px] tracking-[0.2em] uppercase mt-2",
+                    children: "— Matthew 19:6"
+                })]
+            }), h.jsxs("div", {
                 className: "mb-4 select-none flex items-center justify-center gap-1",
                 children: [h.jsx("span", {
                     className: "font-display text-4xl md:text-5xl text-primary leading-none",
@@ -22173,15 +22182,6 @@ function p5({
                     }), h.jsx("div", {
                         className: "w-12 h-px bg-primary/80 mt-1"
                     })]
-                })]
-            }), h.jsxs("div", {
-                className: "mt-8 max-w-[260px] md:max-w-xs mx-auto",
-                children: [h.jsx("p", {
-                    className: "font-body italic text-primary/80 text-[11px] md:text-sm leading-relaxed",
-                    children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
-                }), h.jsx("p", {
-                    className: "font-body text-primary/60 text-[11px] tracking-[0.2em] uppercase mt-2",
-                    children: "— Matthew 19:6"
                 })]
             })]
         }), h.jsx("div", {
