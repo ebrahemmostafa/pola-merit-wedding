@@ -1,0 +1,97 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * mrs-eaves:
+ *   - http://typekit.com/eulas/00000000000000007735b2fd
+ *   - http://typekit.com/eulas/00000000000000007735b2ff
+ *   - http://typekit.com/eulas/00000000000000007735b300
+ *   - http://typekit.com/eulas/00000000000000007735b301
+ * mrs-eaves-roman-all-petite-c:
+ *   - http://typekit.com/eulas/00000000000000007735b2fc
+ * mrs-eaves-roman-all-small-ca:
+ *   - http://typekit.com/eulas/00000000000000007735b2fa
+ * mrs-eaves-roman-lining:
+ *   - http://typekit.com/eulas/00000000000000007735b2fb
+ * mrs-eaves-roman-petite-caps:
+ *   - http://typekit.com/eulas/00000000000000007735b2fe
+ * mrs-eaves-roman-small-caps:
+ *   - http://typekit.com/eulas/00000000000000007735b2f9
+ * parfumerie-script:
+ *   - http://typekit.com/eulas/0000000000000000774f35b3
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2026-04-09 20:43:49 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=jzm0juw&ht=tk&f=28483.28484.28485.28486.28478.28479.28480.28481.28482.53253&a=88056013&app=typekit&e=css");
+
+@font-face {
+font-family:"mrs-eaves";
+src:url("https://use.typekit.net/af/00f106/00000000000000007735b2fd/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/00f106/00000000000000007735b2fd/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/00f106/00000000000000007735b2fd/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves";
+src:url("https://use.typekit.net/af/633665/00000000000000007735b2ff/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/633665/00000000000000007735b2ff/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/633665/00000000000000007735b2ff/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves";
+src:url("https://use.typekit.net/af/af2452/00000000000000007735b300/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/af2452/00000000000000007735b300/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/af2452/00000000000000007735b300/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves";
+src:url("https://use.typekit.net/af/2622bf/00000000000000007735b301/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/2622bf/00000000000000007735b301/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/2622bf/00000000000000007735b301/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves-roman-small-caps";
+src:url("https://use.typekit.net/af/10c018/00000000000000007735b2f9/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/10c018/00000000000000007735b2f9/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/10c018/00000000000000007735b2f9/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves-roman-all-small-ca";
+src:url("https://use.typekit.net/af/db5877/00000000000000007735b2fa/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/db5877/00000000000000007735b2fa/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/db5877/00000000000000007735b2fa/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves-roman-lining";
+src:url("https://use.typekit.net/af/82aa84/00000000000000007735b2fb/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/82aa84/00000000000000007735b2fb/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/82aa84/00000000000000007735b2fb/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves-roman-all-petite-c";
+src:url("https://use.typekit.net/af/12479b/00000000000000007735b2fc/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/12479b/00000000000000007735b2fc/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/12479b/00000000000000007735b2fc/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"mrs-eaves-roman-petite-caps";
+src:url("https://use.typekit.net/af/ac45e2/00000000000000007735b2fe/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/ac45e2/00000000000000007735b2fe/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/ac45e2/00000000000000007735b2fe/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"parfumerie-script";
+src:url("https://use.typekit.net/af/54e388/0000000000000000774f35b3/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/54e388/0000000000000000774f35b3/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/54e388/0000000000000000774f35b3/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-mrs-eaves { font-family: "mrs-eaves",serif; }
+.tk-mrs-eaves-roman-small-caps { font-family: "mrs-eaves-roman-small-caps",serif; }
+.tk-mrs-eaves-roman-all-small-ca { font-family: "mrs-eaves-roman-all-small-ca",serif; }
+.tk-mrs-eaves-roman-lining { font-family: "mrs-eaves-roman-lining",serif; }
+.tk-mrs-eaves-roman-all-petite-c { font-family: "mrs-eaves-roman-all-petite-c",serif; }
+.tk-mrs-eaves-roman-petite-caps { font-family: "mrs-eaves-roman-petite-caps",serif; }
+.tk-parfumerie-script { font-family: "parfumerie-script",sans-serif; }
