@@ -32468,14 +32468,22 @@ function ZU({
                 duration: .8
             },
             children: [h.jsxs("div", {
-                className: "mb-8 select-none flex items-center justify-center gap-2",
-                children: [h.jsx("span", {
-                    className: "font-display text-6xl md:text-7xl text-foreground leading-none",
-                    children: "M"
-                }), h.jsx("span", {
-                    className: "font-display text-6xl md:text-7xl text-foreground italic leading-none",
-                    children: "P"
+                className: "max-w-md mx-auto mb-12",
+                children: [h.jsxs("p", {
+                    className: "font-body italic text-foreground/70 text-lg md:text-xl leading-relaxed",
+                    children: ["Some moments become memories,", h.jsx("br", {}), "some memories become stories,", h.jsx("br", {}), "and some stories begin with “I do.”"]
+                }), h.jsx("p", {
+                    className: "font-display text-4xl md:text-5xl text-foreground mt-8",
+                    children: "Join us as we begin ours."
                 })]
+            }), h.jsx("img", {
+                src: "./assets/l5e-images/monogram-mp.webp",
+                alt: "Merit & Pola monogram",
+                className: "w-32 md:w-40 h-auto mx-auto mb-8 pointer-events-none select-none",
+                style: {
+                    mixBlendMode: "multiply"
+                },
+                draggable: !1
             }), h.jsxs("p", {
                 className: "font-display text-5xl md:text-6xl text-foreground mb-4 leading-tight",
                 children: [e, " ", h.jsx("span", {
