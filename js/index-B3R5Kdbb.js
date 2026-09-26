@@ -22123,23 +22123,22 @@ function p5({
             style: {
                 opacity: s ? 1 : 0,
                 transitionDuration: "1800ms",
-                paddingTop: "clamp(2.5rem, 9vh, 6rem)"
+                paddingTop: "clamp(4rem, 14vh, 8rem)"
             },
             children: h.jsxs("div", {
                 className: "flex flex-col items-center",
                 style: {
                     width: "100%",
-                    maxWidth: "340px",
-                    padding: "1.5rem 1.25rem",
-                    borderRadius: "24px",
-                    background: "rgba(246, 244, 238, 0.84)",
-                    backdropFilter: "blur(3px)",
-                    WebkitBackdropFilter: "blur(3px)",
-                    border: "1px solid hsl(var(--champagne-rose) / 0.6)",
-                    boxShadow: "0 8px 30px -12px rgba(58, 85, 66, 0.25)"
+                    maxWidth: "360px",
+                    padding: "2.5rem 1.5rem",
+                    background: "radial-gradient(ellipse at center, rgba(246, 244, 238, 0.72) 0%, rgba(246, 244, 238, 0.5) 45%, rgba(246, 244, 238, 0) 72%)",
+                    textShadow: "0 0 2px rgba(246, 244, 238, 1), 0 0 8px rgba(246, 244, 238, 1), 0 0 16px rgba(246, 244, 238, 0.9)"
                 },
                 children: [h.jsxs("div", {
                 className: "mb-4 mx-auto",
+                style: {
+                    maxWidth: "250px"
+                },
                 children: [h.jsx("p", {
                     className: "font-body italic text-primary text-sm md:text-base leading-relaxed",
                     children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
@@ -22216,13 +22215,16 @@ function p5({
                     delay: 1,
                     ease: "easeOut"
                 },
-                className: "flex flex-col items-center gap-1 text-center text-primary/85 hover:text-primary transition-colors cursor-pointer pb-10 pointer-events-auto",
+                className: "flex flex-col items-center gap-1 text-center text-primary hover:text-primary transition-colors cursor-pointer pb-10 pointer-events-auto",
+                style: {
+                    textShadow: "0 0 2px rgba(246, 244, 238, 1), 0 0 8px rgba(246, 244, 238, 1), 0 0 16px rgba(246, 244, 238, 0.9)"
+                },
                 "aria-label": "Scroll to countdown",
                 children: [h.jsx("span", {
-                    className: "text-xs tracking-[0.3em] uppercase font-body drop-shadow-lg font-semibold",
+                    className: "text-xs tracking-[0.3em] uppercase font-body font-semibold",
                     children: "Keep scrolling"
                 }), h.jsx("span", {
-                    className: "text-xs tracking-[0.3em] uppercase font-body drop-shadow-lg font-semibold",
+                    className: "text-xs tracking-[0.3em] uppercase font-body font-semibold",
                     children: "and RSVP"
                 }), h.jsx(he.div, {
                     animate: {
