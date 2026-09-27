@@ -22123,7 +22123,7 @@ function p5({
             style: {
                 opacity: s ? 1 : 0,
                 transitionDuration: "1800ms",
-                paddingTop: "clamp(9rem, 23vh, 13rem)"
+                paddingTop: "clamp(11rem, 30vh, 16rem)"
             },
             children: h.jsxs("div", {
                 className: "flex flex-col items-center",
