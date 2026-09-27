@@ -22508,7 +22508,7 @@ function a3() {
                     delay: .1
                 },
                 className: "font-body text-foreground/70 leading-relaxed max-w-md mx-auto",
-                children: "Together with their families, Pola and Merit request the honour of your presence as they exchange their vows at St. Mary Garden City Church, followed by an evening of celebration at the Fleet Club, El Gezirah Hotel."
+                children: "Pola and Merit request the honour of your presence as they exchange their vows. Here you'll find everything you need for our special day."
             }), h.jsx(he.div, {
                 initial: {
                     opacity: 0,
