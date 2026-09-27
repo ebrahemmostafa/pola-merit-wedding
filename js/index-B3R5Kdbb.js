@@ -22622,11 +22622,11 @@ function q3() {
     const e = m.useRef(null),
         t = [{
             label: "Church Ceremony",
-            date: "St. Mary Garden City Church · 17 October 2026 · 5:30pm",
+            date: "St. Mary Garden City Church · 5:30pm",
             mapUrl: "https://maps.app.goo.gl/byPeh41noZMDQsY36?g_st=iwb"
         }, {
             label: "Reception",
-            date: "Fleet Club, El Gezirah Hotel, Zamalek · 17 October 2026 · 8:00pm",
+            date: "Fleet Club, El Gezirah Hotel, Zamalek · 8:00pm",
             mapUrl: "https://maps.app.goo.gl/yiWRDL15DiPQN6A1A?g_st=iwb"
         }];
     return h.jsxs("section", {
@@ -22710,7 +22710,10 @@ function q3() {
                         src: VillaIllustration.url,
                         alt: "",
                         loading: "lazy",
-                        className: "mx-auto w-44 md:w-56 h-auto mb-4 pointer-events-none select-none"
+                        className: "mx-auto w-72 h-auto mb-4 pointer-events-none select-none",
+                        style: {
+                            maxWidth: "100%"
+                        }
                     }), h.jsx("h3", {
                         className: "font-display text-4xl md:text-5xl text-foreground mb-3 leading-tight",
                         children: n.label
