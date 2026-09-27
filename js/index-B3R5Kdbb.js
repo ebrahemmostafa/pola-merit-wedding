@@ -16062,7 +16062,7 @@ const pD = {
             "countdown.minutes": "Minutes",
             "countdown.seconds": "Seconds",
             "welcome.title": "Welcome",
-            "welcome.text": "Together with their families, Merit and Pola request the honour of your presence at the celebration of their marriage in the beautiful city of Istanbul, Turkey.",
+            "welcome.text": "Together with their families, Pola and Merit request the honour of your presence at the celebration of their marriage in the beautiful city of Istanbul, Turkey.",
             "events.title": "The Celebrations",
             "events.subtitle": "Programme of events",
             "events.date": "17 October 2026",
@@ -16110,7 +16110,7 @@ const pD = {
             "dress.womenDesc": "Formal evening gown",
             "accommodation.title": "Where to Stay",
             "accommodation.subtitle": "Recommended hotels near the venue",
-            "accommodation.recommend": "Kindly mention the wedding of Merit & Pola when booking to enquire about any preferential rates.",
+            "accommodation.recommend": "Kindly mention the wedding of Pola & Merit when booking to enquire about any preferential rates.",
             "accommodation.perNight": "per night · double standard room · incl. taxes & breakfast",
             "accommodation.bookingSoon": "Booking link coming soon",
             "accommodation.bookingEmail": "Booking via email – details coming soon",
@@ -16203,7 +16203,7 @@ BIC/SWIFT: XXXXXXXXXX`,
             "countdown.minutes": "Minuten",
             "countdown.seconds": "Sekunden",
             "welcome.title": "Willkommen",
-            "welcome.text": "Gemeinsam mit ihren Familien laden Merit und Pola Sie herzlich ein, die Feier ihrer Vermählung in der wunderschönen Stadt Istanbul, Türkei, mit ihnen zu begehen.",
+            "welcome.text": "Gemeinsam mit ihren Familien laden Pola und Merit Sie herzlich ein, die Feier ihrer Vermählung in der wunderschönen Stadt Istanbul, Türkei, mit ihnen zu begehen.",
             "events.title": "Die Feierlichkeiten",
             "events.subtitle": "Programm der Veranstaltungen",
             "events.date": "17. Oktober 2026",
@@ -16251,7 +16251,7 @@ BIC/SWIFT: XXXXXXXXXX`,
             "dress.womenDesc": "Formelles Abendkleid",
             "accommodation.title": "Unterkünfte",
             "accommodation.subtitle": "Empfohlene Hotels in der Nähe des Veranstaltungsortes",
-            "accommodation.recommend": "Bitte erwähnen Sie bei der Buchung die Hochzeit von Merit & Pola, um nach Sonderkonditionen zu fragen.",
+            "accommodation.recommend": "Bitte erwähnen Sie bei der Buchung die Hochzeit von Pola & Merit, um nach Sonderkonditionen zu fragen.",
             "accommodation.perNight": "pro Nacht · Doppelzimmer Standard · inkl. Steuern & Frühstück",
             "accommodation.bookingSoon": "Buchungslink folgt in Kürze",
             "accommodation.bookingEmail": "Buchung per E-Mail – Details folgen in Kürze",
@@ -22123,81 +22123,42 @@ function p5({
             style: {
                 opacity: s ? 1 : 0,
                 transitionDuration: "1800ms",
-                paddingTop: "clamp(4rem, 14vh, 8rem)"
+                paddingTop: "clamp(8rem, 20vh, 11rem)"
             },
             children: h.jsxs("div", {
                 className: "flex flex-col items-center",
                 style: {
                     width: "100%",
-                    maxWidth: "360px",
-                    padding: "2.5rem 1.5rem",
-                    background: "radial-gradient(ellipse at center, rgba(246, 244, 238, 0.72) 0%, rgba(246, 244, 238, 0.5) 45%, rgba(246, 244, 238, 0) 72%)",
-                    textShadow: "0 0 2px rgba(246, 244, 238, 1), 0 0 8px rgba(246, 244, 238, 1), 0 0 16px rgba(246, 244, 238, 0.9)"
-                },
-                children: [h.jsxs("div", {
-                className: "mb-4 mx-auto",
-                style: {
-                    maxWidth: "250px"
+                    maxWidth: "340px",
+                    padding: "1rem",
+                    background: "radial-gradient(ellipse at center, rgba(246, 244, 238, 0.78) 0%, rgba(246, 244, 238, 0.5) 50%, rgba(246, 244, 238, 0) 78%)",
+                    textShadow: "0 0 2px rgba(246, 244, 238, 1), 0 0 8px rgba(246, 244, 238, 0.9)"
                 },
                 children: [h.jsx("p", {
-                    className: "font-body italic text-primary text-sm md:text-base leading-relaxed",
-                    children: '"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
+                    className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary font-medium mb-3",
+                    children: "We're getting married"
+                }), h.jsxs("h2", {
+                    className: "font-display font-normal md:text-7xl leading-[0.95] mb-3 text-5xl text-primary whitespace-nowrap",
+                    children: ["Pola ", h.jsx("span", {
+                        className: "italic",
+                        style: {
+                            color: "hsl(var(--champagne-rose))"
+                        },
+                        children: "&"
+                    }), " Merit"]
                 }), h.jsx("p", {
-                    className: "font-body text-primary/80 text-[11px] tracking-[0.2em] uppercase mt-2",
-                    children: "— Matthew 19:6"
-                }), h.jsx("div", {
+                    className: "font-body italic text-primary text-xs md:text-sm leading-relaxed mb-4",
                     style: {
-                        width: "40px",
-                        height: "1px",
-                        margin: "0.75rem auto 0",
-                        background: "hsl(var(--champagne-rose))"
-                    }
-                })]
-            }), h.jsxs("h2", {
-                className: "font-display font-normal md:text-7xl leading-[0.95] mb-3 text-5xl text-primary",
-                children: ["Merit ", h.jsx("span", {
-                    className: "italic",
-                    style: {
-                        color: "hsl(var(--champagne-rose))"
+                        maxWidth: "270px"
                     },
-                    children: "&"
-                }), " Pola"]
-            }), h.jsxs("p", {
-                className: "font-body md:text-xs tracking-[0.2em] uppercase text-primary max-w-[260px] md:max-w-xs leading-snug text-[11px] font-medium",
-                children: ["INVITE YOU TO CELEBRATE ", h.jsx("br", {}), "OUR WEDDING DAY"]
-            }), h.jsx("p", {
-                className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary mt-2 font-medium",
-                children: "in"
-            }), h.jsx("p", {
-                className: "font-display md:text-4xl text-primary mt-1 text-3xl leading-none",
-                children: "Cairo, Egypt"
-            }), h.jsxs("div", {
-                className: "flex items-center justify-center gap-3 mt-2 text-primary",
-                children: [h.jsxs("div", {
-                    className: "flex flex-col items-center",
-                    children: [h.jsx("div", {
-                        className: "w-12 h-px bg-primary/80 mb-1"
-                    }), h.jsxs("span", {
-                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium whitespace-nowrap",
-                        children: ["Church", h.jsx("br", {}), "5:30 PM"]
-                    }), h.jsx("div", {
-                        className: "w-12 h-px bg-primary/80 mt-1"
-                    })]
-                }), h.jsx("span", {
-                    className: "font-display md:text-5xl font-light leading-none text-4xl text-primary whitespace-nowrap",
-                    children: "17 Oct"
-                }), h.jsxs("div", {
-                    className: "flex flex-col items-center",
-                    children: [h.jsx("div", {
-                        className: "w-12 h-px bg-primary/80 mb-1"
-                    }), h.jsxs("span", {
-                        className: "font-body text-[11px] md:text-sm tracking-[0.25em] uppercase font-medium whitespace-nowrap",
-                        children: ["Reception", h.jsx("br", {}), "8:00 PM"]
-                    }), h.jsx("div", {
-                        className: "w-12 h-px bg-primary/80 mt-1"
-                    })]
+                    children: "“So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.” — Matthew 19:6"
+                }), h.jsx("p", {
+                    className: "font-body text-xl tracking-[0.2em] uppercase text-primary",
+                    children: "17 October 2026"
+                }), h.jsx("p", {
+                    className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary font-medium mt-2",
+                    children: "Cairo, Egypt"
                 })]
-            })]
             })
         }), h.jsx("div", {
             className: "relative z-30 flex-1 flex flex-col items-center justify-end pointer-events-none",
@@ -22547,7 +22508,7 @@ function a3() {
                     delay: .1
                 },
                 className: "font-body text-foreground/70 leading-relaxed max-w-md mx-auto",
-                children: "Together with their families, Merit and Pola request the honour of your presence as they exchange their vows at St. Mary Garden City Church, followed by an evening of celebration at the Fleet Club, El Gezirah Hotel."
+                children: "Together with their families, Pola and Merit request the honour of your presence as they exchange their vows at St. Mary Garden City Church, followed by an evening of celebration at the Fleet Club, El Gezirah Hotel."
             }), h.jsx(he.div, {
                 initial: {
                     opacity: 0,
@@ -31984,8 +31945,8 @@ function BU({
     })
 }
 const tc = {
-    couple_name_1: "Merit",
-    couple_name_2: "Pola",
+    couple_name_1: "Pola",
+    couple_name_2: "Merit",
     wedding_date: "2026-10-17",
     venue_location: "Fleet Club, El Gezirah Hotel, Zamalek, Cairo, Egypt"
 };
@@ -32480,7 +32441,7 @@ function ZU({
                 })]
             }), h.jsx("img", {
                 src: "./assets/l5e-images/monogram-mp.webp",
-                alt: "Merit & Pola monogram",
+                alt: "Pola & Merit monogram",
                 className: "w-32 md:w-40 h-auto mx-auto mb-8 pointer-events-none select-none",
                 style: {
                     mixBlendMode: "multiply"
@@ -32572,13 +32533,13 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                         children: "We're getting married"
                     }), h.jsxs("h2", {
                         className: "font-display font-normal text-6xl md:text-7xl leading-[0.95] text-primary [text-shadow:_0_1px_8px_rgba(71,84,58,0.6),_0_0_22px_rgba(71,84,58,0.4)]",
-                        children: ["Merit ", h.jsx("span", {
+                        children: ["Pola ", h.jsx("span", {
                             className: "italic",
                             style: {
                                 color: "hsl(var(--champagne-rose))"
                             },
                             children: "&"
-                        }), " Pola"]
+                        }), " Merit"]
                     })]
                 })
             }), r === "playing" && h.jsx("button", {
@@ -32611,10 +32572,10 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
         version: B9
     },
     vs = {
-        couple_name_1: "Merit",
-        couple_name_2: "Pola",
-        hero_name_1: "Merit",
-        hero_name_2: "Pola",
+        couple_name_1: "Pola",
+        couple_name_2: "Merit",
+        hero_name_1: "Pola",
+        hero_name_2: "Merit",
         wedding_date: "2026-10-17",
         venue_name: "Cairo, Egypt",
         venue_address: "Cairo, Egypt"
