@@ -32621,7 +32621,7 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                         loading: "lazy",
                         className: "w-48 md:w-60 h-auto pointer-events-none select-none"
                     })
-                }), h.jsx(wf, {}), h.jsx(OrderOfDay, {}), h.jsx(wf, {}), h.jsx(lF, {}), h.jsx(wf, {}), h.jsx(wF, {}), h.jsx(KidsNote, {}), h.jsx(wf, {}), h.jsx(UU, {}), h.jsx(ZU, {
+                }), h.jsx(wf, {}), h.jsx(OrderOfDay, {}), h.jsx(wf, {}), h.jsx(lF, {}), h.jsx(KidsNote, {}), h.jsx(wf, {}), h.jsx(UU, {}), h.jsx(ZU, {
                     name1: vs.couple_name_1,
                     name2: vs.couple_name_2,
                     date: vs.wedding_date
