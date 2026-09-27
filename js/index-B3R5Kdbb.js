@@ -23086,15 +23086,7 @@ const X3 = "59cfe8ac-5463-4f24-bd50-46c0508ad4ee",
         url: sF,
         version: iF
     },
-    aF = [{
-        title: "Church Ceremony",
-        date: "17th October 2026",
-        attire: "Elegant Daywear"
-    }, {
-        title: "Reception",
-        date: "17th October 2026",
-        attire: "Wear Colors / Formal Evening Wear"
-    }],
+    aF = [],
     DF1 = {
         url: "./assets/l5e-images/dresscode-frame-1.png"
     },
@@ -23137,27 +23129,7 @@ function lF() {
         className: "py-20 md:py-28 px-6 overflow-hidden",
         children: h.jsxs("div", {
             className: "relative max-w-2xl mx-auto text-center",
-            children: [h.jsx(ut, {
-                src: s6.url,
-                alt: "",
-                loading: "lazy",
-                className: "absolute top-72 -left-24 md:-left-32 w-44 md:w-52 h-auto pointer-events-none select-none z-10"
-            }), h.jsx(ut, {
-                src: p6.url,
-                alt: "",
-                loading: "lazy",
-                className: "absolute top-24 -right-24 md:-right-32 w-44 md:w-52 h-auto pointer-events-none select-none z-10"
-            }), h.jsx(ut, {
-                src: E6.url,
-                alt: "",
-                loading: "lazy",
-                className: "absolute -bottom-16 -left-20 md:-left-28 w-32 md:w-40 h-auto pointer-events-none select-none z-10"
-            }), h.jsx(ut, {
-                src: I6.url,
-                alt: "",
-                loading: "lazy",
-                className: "absolute top-[78%] -translate-y-1/2 -right-16 md:-right-24 w-32 md:w-40 h-auto pointer-events-none select-none z-10"
-            }), h.jsxs(he.div, {
+            children: [h.jsxs(he.div, {
                 initial: {
                     opacity: 0,
                     y: 20
@@ -32229,7 +32201,7 @@ function UU() {
                                 })]
                             }, D))
                         })]
-                    }), x.attendance === "yes" && h.jsxs("div", {
+                    }), !1 && h.jsxs("div", {
                         className: "space-y-4",
                         children: [h.jsx(Xe, {
                             className: "text-foreground font-body text-base tracking-wide",
