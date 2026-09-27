@@ -32496,10 +32496,11 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                 muted: !0,
                 preload: "auto"
             }), h.jsx("div", {
-                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pt-[14vh] md:pt-[16vh] pointer-events-none transition-opacity ease-out",
+                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pointer-events-none transition-opacity ease-out",
                 style: {
                     opacity: i ? 1 : 0,
-                    transitionDuration: "1400ms"
+                    transitionDuration: "1400ms",
+                    paddingTop: "32vh"
                 },
                 children: h.jsxs("div", {
                     className: "relative px-2 py-2",
