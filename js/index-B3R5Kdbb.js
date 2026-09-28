@@ -22036,7 +22036,7 @@ const HL = {
     qL = 1,
     XL = "dc30d580-2216-4eb3-a4e5-1ff5858e7710",
     QL = "468e6815-3729-4bb3-a56d-9c8683062112",
-    YL = "./assets/l5e-images/bellagio-2-final.jpg",
+    YL = "./assets/l5e-images/hero-bow-final-v2.jpg",
     JL = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/dc30d580-2216-4eb3-a4e5-1ff5858e7710/hero-bow-final-v2.jpg",
     ZL = "hero-bow-final-v2.jpg",
     e5 = 428885,
@@ -32438,29 +32438,107 @@ function ZU({
         })
     })
 }
-const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
-    Uw = "./assets/l5e-images/bellagio-2-poster.jpg",
+const e9 = "4d9d374a-1997-4ef7-bad6-945ee2e589c7",
+    t9 = "video/mp4",
+    n9 = "2026-06-08T23:25:17Z",
+    r9 = "rs-envelope-v5.mp4",
+    s9 = "468e6815-3729-4bb3-a56d-9c8683062112",
+    i9 = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/4d9d374a-1997-4ef7-bad6-945ee2e589c7/rs-envelope-v5.mp4",
+    o9 = 3034640,
+    a9 = "./assets/l5e-videos/rs-envelope-v5.mp4",
+    l9 = 1,
+    c9 = {
+        asset_id: e9,
+        content_type: t9,
+        created_at: n9,
+        original_filename: r9,
+        project_id: s9,
+        r2_key: i9,
+        size: o9,
+        url: a9,
+        version: l9
+    },
+    u9 = "5edb9433-7ef0-41a7-bc38-2419a46f6850",
+    d9 = "image/jpeg",
+    f9 = "2026-06-08T23:20:15Z",
+    h9 = "rs-envelope-poster-v4.jpg",
+    p9 = "468e6815-3729-4bb3-a56d-9c8683062112",
+    m9 = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/5edb9433-7ef0-41a7-bc38-2419a46f6850/rs-envelope-poster-v4.jpg",
+    g9 = 932611,
+    v9 = "./assets/l5e-images/rs-envelope-poster-v4.jpg",
+    y9 = 1,
+    w9 = {
+        asset_id: u9,
+        content_type: d9,
+        created_at: f9,
+        original_filename: h9,
+        project_id: p9,
+        r2_key: m9,
+        size: g9,
+        url: v9,
+        version: y9
+    },
+    x9 = 1,
+    b9 = "ca66d869-63f5-40cc-8421-1b0df31922c2",
+    _9 = "468e6815-3729-4bb3-a56d-9c8683062112",
+    S9 = "./assets/l5e-videos/rs-bow-v2.mp4",
+    E9 = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/ca66d869-63f5-40cc-8421-1b0df31922c2/rs-bow-v2.mp4",
+    T9 = "rs-bow-v2.mp4",
+    k9 = 20205937,
+    C9 = "video/mp4",
+    P9 = "2026-06-25T13:53:16Z",
+    R9 = {
+        version: x9,
+        asset_id: b9,
+        project_id: _9,
+        url: S9,
+        r2_key: E9,
+        original_filename: T9,
+        size: k9,
+        content_type: C9,
+        created_at: P9
+    },
+    A9 = c9.url,
+    Uw = w9.url,
+    N9 = R9.url,
     j9 = ({
         onEnter: e,
         onStartMusic: t,
         onShowHeroText: n
     }) => {
-        const [r, s] = m.useState("idle"), [i, o] = m.useState(!1), a = m.useRef(null), l = () => {
-            var v;
-            r === "idle" && (s("playing"), t == null || t(), (v = a.current) == null || v.play().catch(() => {}))
-        }, c = () => {
-            s("fading"), e(), window.setTimeout(() => s("done"), 1500)
-        }, u = () => {
-            const v = a.current;
-            if (!v) return;
-            const y = v.duration || 0;
-            !i && y > 0 && v.currentTime >= y - 4 && (o(!0), n == null || n()), y > 0 && v.currentTime >= y - .4 && c()
-        }, d = () => {
-            i || (o(!0), n == null || n()), c()
-        }, f = r === "idle";
+        const [r, s] = m.useState("idle"), [i, o] = m.useState(!1), [a, l] = m.useState(!1), [c, u] = m.useState(!1), d = m.useRef(null), f = m.useRef(null), p = () => {
+            var E;
+            r === "idle" && (s("envelope"), t == null || t(), (E = d.current) == null || E.play().catch(() => {}))
+        }, b = () => {
+            if (r !== "envelope") return;
+            s("bow");
+            const E = f.current;
+            E && (E.currentTime = 0, E.play().catch(() => {}))
+        }, g = () => {
+            c || (u(!0), n == null || n(), e(), s("fading"), window.setTimeout(() => s("done"), 1500))
+        }, x = () => {
+            const E = d.current;
+            if (!E) return;
+            E.currentTime > .05 && !i && o(!0);
+            const C = E.duration || 0;
+            r === "envelope" && C > 0 && E.currentTime >= C - .4 && b()
+        }, y = () => b(), v = () => {
+            const E = f.current;
+            if (!E) return;
+            E.currentTime > .05 && !a && l(!0);
+            const C = E.duration || 0;
+            r === "bow" && C > 0 && E.currentTime >= C - .8 && g()
+        }, w = () => g();
+        m.useEffect(() => {
+            var E;
+            (E = f.current) == null || E.load()
+        }, []);
+        const _ = r === "idle" || r === "envelope" && !i,
+            S = r === "idle" || r === "envelope",
+            T = r === "bow" || r === "fading";
         return h.jsxs(he.div, {
             className: "fixed inset-0 z-50 cursor-pointer bg-background",
-            onClick: l,
+            onClick: p,
             initial: {
                 opacity: 1
             },
@@ -32479,28 +32557,39 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                 alt: "",
                 className: "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
                 style: {
-                    opacity: f ? 1 : 0
+                    opacity: _ ? 1 : 0
                 },
                 draggable: !1
             }), h.jsx("video", {
-                ref: a,
-                src: IntroVid,
+                ref: d,
+                src: A9,
                 poster: Uw,
                 className: "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
                 style: {
-                    opacity: f ? 0 : 1
+                    opacity: S && i ? 1 : 0
                 },
-                onTimeUpdate: u,
-                onEnded: d,
+                onTimeUpdate: x,
+                onEnded: y,
+                playsInline: !0,
+                muted: !0,
+                preload: "auto"
+            }), h.jsx("video", {
+                ref: f,
+                src: N9,
+                className: "absolute inset-0 w-full h-full object-cover transition-opacity duration-1000",
+                style: {
+                    opacity: T ? 1 : 0
+                },
+                onTimeUpdate: v,
+                onEnded: w,
                 playsInline: !0,
                 muted: !0,
                 preload: "auto"
             }), h.jsx("div", {
-                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pointer-events-none transition-opacity ease-out",
+                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pt-[14vh] md:pt-[16vh] pointer-events-none transition-opacity ease-out",
                 style: {
-                    opacity: i ? 1 : 0,
-                    transitionDuration: "1400ms",
-                    paddingTop: "32vh"
+                    opacity: r === "bow" && a ? 1 : 0,
+                    transitionDuration: "1400ms"
                 },
                 children: h.jsxs("div", {
                     className: "relative px-2 py-2",
@@ -32518,12 +32607,6 @@ const IntroVid = "./assets/l5e-videos/bellagio-2.mp4",
                         }), " Merit"]
                     })]
                 })
-            }), r === "playing" && h.jsx("button", {
-                onClick: v => {
-                    v.stopPropagation(), d()
-                },
-                className: "absolute bottom-6 right-6 bg-secondary/90 text-primary px-5 py-2 rounded-full font-body text-sm tracking-wide backdrop-blur-sm border border-muted/30 shadow-lg hover:bg-secondary transition-all duration-300",
-                children: "Skip"
             })]
         })
     },
