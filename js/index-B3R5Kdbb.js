@@ -32481,7 +32481,7 @@ const e9 = "4d9d374a-1997-4ef7-bad6-945ee2e589c7",
     x9 = 1,
     b9 = "ca66d869-63f5-40cc-8421-1b0df31922c2",
     _9 = "468e6815-3729-4bb3-a56d-9c8683062112",
-    S9 = "./assets/l5e-videos/bellagio-2.mp4",
+    S9 = "./assets/l5e-videos/rs-bow-v2.mp4",
     E9 = "a/v1/468e6815-3729-4bb3-a56d-9c8683062112/ca66d869-63f5-40cc-8421-1b0df31922c2/rs-bow-v2.mp4",
     T9 = "rs-bow-v2.mp4",
     k9 = 20205937,
@@ -32586,11 +32586,10 @@ const e9 = "4d9d374a-1997-4ef7-bad6-945ee2e589c7",
                 muted: !0,
                 preload: "auto"
             }), h.jsx("div", {
-                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pointer-events-none transition-opacity ease-out",
+                className: "absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pt-[14vh] md:pt-[16vh] pointer-events-none transition-opacity ease-out",
                 style: {
                     opacity: r === "bow" && a ? 1 : 0,
-                    transitionDuration: "1400ms",
-                    paddingTop: "32vh"
+                    transitionDuration: "1400ms"
                 },
                 children: h.jsxs("div", {
                     className: "relative px-2 py-2",
