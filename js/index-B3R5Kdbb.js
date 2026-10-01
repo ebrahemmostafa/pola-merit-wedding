@@ -22724,8 +22724,9 @@ function q3() {
                     }), n.arabic && h.jsx("p", {
                         dir: "rtl",
                         lang: "ar",
-                        className: "text-2xl md:text-4xl text-foreground leading-snug",
+                        className: "text-foreground leading-snug",
                         style: {
+                            fontSize: "clamp(1.25rem, 5vw, 1.75rem)",
                             fontFamily: "'Aref Ruqaa', serif",
                             fontWeight: 700,
                             marginTop: "0.75rem"
