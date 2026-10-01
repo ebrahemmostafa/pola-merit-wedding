@@ -22153,7 +22153,7 @@ function p5({
                         children: "&"
                     }), " Merit"]
                 }), h.jsx("p", {
-                    className: "font-body text-2xl tracking-[0.2em] uppercase text-primary font-semibold",
+                    className: "font-body text-xl tracking-[0.2em] uppercase text-primary font-semibold",
                     children: "17 October 2026"
                 }), h.jsx("p", {
                     className: "font-body text-xs md:text-base tracking-[0.35em] uppercase text-primary font-semibold mt-2",
