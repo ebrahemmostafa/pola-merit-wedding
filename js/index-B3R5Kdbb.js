@@ -22623,6 +22623,7 @@ function q3() {
         t = [{
             label: "Church Ceremony",
             date: "St. Mary Garden City Church · 5:30pm",
+            arabic: "كنيسة السيدة العذراء مريم بجاردن سيتي",
             mapUrl: "https://maps.app.goo.gl/byPeh41noZMDQsY36?g_st=iwb"
         }, {
             label: "Reception",
@@ -22720,12 +22721,50 @@ function q3() {
                     }), h.jsx("p", {
                         className: "font-body text-base text-foreground/60 italic tracking-wide",
                         children: n.date
-                    }), n.mapUrl && h.jsx("a", {
+                    }), n.arabic && h.jsx("p", {
+                        dir: "rtl",
+                        lang: "ar",
+                        className: "text-2xl md:text-4xl text-foreground leading-snug",
+                        style: {
+                            fontFamily: "'Aref Ruqaa', serif",
+                            fontWeight: 700,
+                            marginTop: "0.75rem"
+                        },
+                        children: n.arabic
+                    }), n.mapUrl && h.jsxs("a", {
                         href: n.mapUrl,
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        className: "block mt-2 font-body text-sm tracking-[0.25em] uppercase text-foreground/50 hover:text-foreground transition-colors underline underline-offset-2",
-                        children: "View on Map"
+                        className: "font-body text-base text-foreground",
+                        style: {
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "0.5rem",
+                            marginTop: "1.25rem",
+                            padding: "0.65rem 1.5rem",
+                            borderRadius: "9999px",
+                            border: "1.5px solid hsl(var(--foreground) / 0.6)",
+                            background: "hsl(var(--foreground) / 0.06)"
+                        },
+                        children: [h.jsxs("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: 18,
+                            height: 18,
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            "aria-hidden": "true",
+                            children: [h.jsx("path", {
+                                d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                            }), h.jsx("circle", {
+                                cx: 12,
+                                cy: 10,
+                                r: 3
+                            })]
+                        }), "Open in Google Maps"]
                     })]
                 }, r))
             }), h.jsx(he.div, {
