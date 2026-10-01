@@ -22134,11 +22134,17 @@ function p5({
                     background: "radial-gradient(ellipse at center, rgba(246, 244, 238, 0.78) 0%, rgba(246, 244, 238, 0.5) 50%, rgba(246, 244, 238, 0) 78%)",
                     textShadow: "0 0 2px rgba(246, 244, 238, 1), 0 0 8px rgba(246, 244, 238, 0.9)"
                 },
-                children: [h.jsx("p", {
-                    className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary font-medium mb-3",
+                children: [h.jsxs("p", {
+                    className: "font-body italic font-semibold text-primary text-sm md:text-base leading-relaxed mb-5",
+                    style: {
+                        maxWidth: "290px"
+                    },
+                    children: ["“So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.”", h.jsx("br", {}), "— Matthew 19:6"]
+                }), h.jsx("p", {
+                    className: "font-body text-xs md:text-base tracking-[0.35em] uppercase text-primary font-semibold mb-3",
                     children: "We're getting married"
                 }), h.jsxs("h2", {
-                    className: "font-display font-normal md:text-7xl leading-[0.95] mb-3 text-5xl text-primary whitespace-nowrap",
+                    className: "font-display font-semibold md:text-7xl leading-[0.95] mb-3 text-5xl text-primary whitespace-nowrap",
                     children: ["Pola ", h.jsx("span", {
                         className: "italic",
                         style: {
@@ -22147,16 +22153,10 @@ function p5({
                         children: "&"
                     }), " Merit"]
                 }), h.jsx("p", {
-                    className: "font-body italic text-primary text-xs md:text-sm leading-relaxed mb-4",
-                    style: {
-                        maxWidth: "270px"
-                    },
-                    children: "“So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.” — Matthew 19:6"
-                }), h.jsx("p", {
-                    className: "font-body text-xl tracking-[0.2em] uppercase text-primary",
+                    className: "font-body text-2xl tracking-[0.2em] uppercase text-primary font-semibold",
                     children: "17 October 2026"
                 }), h.jsx("p", {
-                    className: "font-body text-[11px] md:text-sm tracking-[0.35em] uppercase text-primary font-medium mt-2",
+                    className: "font-body text-xs md:text-base tracking-[0.35em] uppercase text-primary font-semibold mt-2",
                     children: "Cairo, Egypt"
                 })]
             })
