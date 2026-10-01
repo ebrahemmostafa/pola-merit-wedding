@@ -31718,8 +31718,8 @@ function $U() {
     return t ? parseInt(t[1], 10) <= 18 : !1
 }
 $U() && console.warn("⚠️  Node.js 18 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 20 or later. For more information, visit: https://github.com/orgs/supabase/discussions/37217");
-const MU = "https://sbqvxbbtjrhrwveenncx.supabase.co",
-    LU = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNicXZ4YmJ0anJocnd2ZWVubmN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3OTcwMDksImV4cCI6MjA5NzM3MzAwOX0.pZcPyPsfppyJquPKfXJln2BsNsPiaWx8edMzDWpqmRg",
+const MU = "https://jcuqwcwkowtjxcykstlf.supabase.co",
+    LU = "sb_publishable_BFtrH3u_sv9zat6B9SALyw_nS7Pajaa",
     sd = DU(MU, LU, {
         auth: {
             storage: localStorage,
@@ -31731,14 +31731,23 @@ const MU = "https://sbqvxbbtjrhrwveenncx.supabase.co",
 function FU() {
     return aS({
         mutationFn: async e => {
+            if (e.website) return {
+                isUpdate: !1
+            };
             const {
-                data: t,
                 error: n
-            } = await sd.functions.invoke("submit-rsvp", {
-                body: e
+            } = await sd.from("pola_merit_rsvps").insert({
+                full_name: e.full_name,
+                phone: e.phone || null,
+                attendance: e.attendance,
+                guest_count: e.guest_count,
+                adult_count: e.adult_count,
+                children_count: e.children_count,
+                dietary_requirements: e.dietary_requirements || null,
+                attending_events: e.attending_events || null,
+                message: e.message || null
             });
             if (n) throw n;
-            if (t != null && t.error) throw new Error(t.error);
             return {
                 isUpdate: !1
             }

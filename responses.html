@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>RSVP Responses · Pola & Merit</title>
+    <link rel="stylesheet" href="css/typekit-jzm0juw.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        :root {
+            --bg: hsl(40 33% 95%);
+            --card: hsl(40 25% 91%);
+            --ink: hsl(137 19% 28%);
+            --ink-soft: hsl(137 19% 28% / 0.65);
+            --line: hsl(137 19% 28% / 0.15);
+            --rose: hsl(350 45% 78%);
+            --rose-deep: hsl(350 40% 55%);
+            --ok: hsl(137 30% 38%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: "mrs-eaves", Georgia, serif;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+        h1 {
+            font-family: "parfumerie-script", cursive;
+            font-weight: 400;
+            font-size: 52px;
+            line-height: 1.1;
+            text-align: center;
+            margin: 8px 0 4px;
+        }
+        h1 .amp { color: var(--rose); }
+        .sub { text-align: center; letter-spacing: 0.25em; text-transform: uppercase; font-size: 12px; color: var(--ink-soft); margin-bottom: 28px; }
+        .panel { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+        label { display: block; font-size: 14px; margin: 12px 0 6px; }
+        input, select {
+            width: 100%;
+            font: inherit;
+            color: var(--ink);
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 10px 12px;
+        }
+        input:focus, select:focus { outline: 2px solid var(--rose); outline-offset: 1px; }
+        button {
+            font: inherit;
+            cursor: pointer;
+            border-radius: 9999px;
+            border: 1px solid var(--ink);
+            background: var(--ink);
+            color: var(--bg);
+            padding: 9px 20px;
+            font-size: 15px;
+        }
+        button.ghost { background: transparent; color: var(--ink); }
+        button.danger { background: transparent; color: var(--rose-deep); border-color: var(--rose-deep); padding: 5px 12px; font-size: 13px; }
+        button:disabled { opacity: 0.5; cursor: default; }
+        .msg { margin-top: 12px; font-size: 14px; color: var(--rose-deep); min-height: 1em; }
+        .notice { max-width: 560px; margin: 0 auto; text-align: center; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+        .stat .num { font-size: 32px; line-height: 1.1; }
+        .stat .lbl { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-soft); }
+        .stat.rose { border-color: var(--rose); }
+        .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+        .toolbar input { flex: 1 1 220px; width: auto; }
+        .toolbar select { flex: 0 0 170px; width: auto; }
+        .toolbar .spacer { flex: 1 1 auto; }
+        .count { font-size: 14px; color: var(--ink-soft); margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 15px; }
+        th { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 400; background: hsl(40 25% 88%); }
+        tr:last-child td { border-bottom: none; }
+        .pill { display: inline-block; border-radius: 9999px; padding: 2px 10px; font-size: 13px; white-space: nowrap; }
+        .pill.yes { background: hsl(137 30% 38% / 0.12); color: var(--ok); }
+        .pill.no { background: hsl(350 45% 78% / 0.3); color: var(--rose-deep); }
+        .muted { color: var(--ink-soft); }
+        .empty { text-align: center; padding: 32px; color: var(--ink-soft); }
+        .hidden { display: none !important; }
+        @media (max-width: 760px) {
+            h1 { font-size: 42px; }
+            table, thead, tbody, tr, td { display: block; width: 100%; }
+            thead { display: none; }
+            table { background: transparent; border: none; }
+            tr { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px; padding: 6px 0; }
+            td { border-bottom: none; padding: 6px 14px; }
+            td::before { content: attr(data-label); display: block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Pola <span class="amp">&amp;</span> Merit</h1>
+    <div class="sub">RSVP Responses</div>
+
+    <div id="notConfigured" class="panel notice hidden">
+        <p>This page is not connected to Supabase yet.</p>
+        <p class="muted">Set <code>SUPABASE_URL</code> and <code>SUPABASE_ANON_KEY</code> near the bottom of <code>responses.html</code>.</p>
+    </div>
+
+    <div id="noKey" class="panel notice hidden">
+        <p>Open this page with your private link to see the responses.</p>
+        <p class="muted">The link ends with <code>#key=…</code></p>
+    </div>
+
+    <div id="dashView" class="hidden">
+        <div class="stats">
+            <div class="stat"><div class="num" id="sResponses">0</div><div class="lbl">Responses</div></div>
+            <div class="stat"><div class="num" id="sYes">0</div><div class="lbl">Attending</div></div>
+            <div class="stat"><div class="num" id="sNo">0</div><div class="lbl">Declined</div></div>
+            <div class="stat rose"><div class="num" id="sGuests">0</div><div class="lbl">Total guests</div></div>
+            <div class="stat"><div class="num" id="sCeremony">0</div><div class="lbl">Church guests</div></div>
+            <div class="stat"><div class="num" id="sReception">0</div><div class="lbl">Reception guests</div></div>
+        </div>
+
+        <div class="toolbar">
+            <input id="search" type="search" placeholder="Search name, phone, message…" aria-label="Search">
+            <select id="filter" aria-label="Filter by attendance">
+                <option value="all">All responses</option>
+                <option value="yes">Attending</option>
+                <option value="no">Declined</option>
+            </select>
+            <button id="refreshBtn" type="button" class="ghost">Refresh</button>
+            <button id="csvBtn" type="button" class="ghost">Export CSV</button>
+        </div>
+        <div class="count" id="count"></div>
+        <div id="listMsg" class="msg" role="alert"></div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attending</th>
+                <th>Guests</th>
+                <th>Events</th>
+                <th>Phone</th>
+                <th>Dietary</th>
+                <th>Message</th>
+                <th>Received</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+    // ---- Configuration: your Supabase project (Dashboard -> Project Settings -> API) ----
+    const SUPABASE_URL = "https://jcuqwcwkowtjxcykstlf.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_BFtrH3u_sv9zat6B9SALyw_nS7Pajaa";
+    // -------------------------------------------------------------------------------------
+
+    const EVENT_LABELS = { ceremony: "Church", reception: "Reception" };
+    const $ = id => document.getElementById(id);
+    const show = (el, on) => el.classList.toggle("hidden", !on);
+    let rows = [];
+
+    const configured = SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length > 0;
+    if (!configured) {
+        show($("notConfigured"), true);
+    } else {
+        const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, { auth: { persistSession: false } });
+        const key = new URLSearchParams(location.hash.slice(1)).get("key") || "";
+
+        async function loadRows() {
+            $("listMsg").textContent = "";
+            $("refreshBtn").disabled = true;
+            const { data, error } = await db.rpc("get_pola_merit_rsvps", { p_key: key });
+            $("refreshBtn").disabled = false;
+            if (error) {
+                const badKey = /invalid key/i.test(error.message);
+                if (badKey) {
+                    show($("dashView"), false);
+                    show($("noKey"), true);
+                    return;
+                }
+                $("listMsg").textContent = "Could not load responses: " + error.message;
+                rows = [];
+            } else {
+                rows = (data || []).map(normalize);
+            }
+            render();
+        }
+
+        // Older rows may use the previous column names (name / attending).
+        function normalize(r) {
+            const attendance = r.attendance || (r.attending === true ? "yes" : r.attending === false ? "no" : null);
+            return { ...r, full_name: r.full_name || r.name || "", attendance };
+        }
+
+        function eventsOf(r) {
+            return (r.attending_events || "").split(",").map(s => s.trim()).filter(Boolean);
+        }
+
+        function guestsOf(r) {
+            return r.guest_count || r.adult_count || 1;
+        }
+
+        function filtered() {
+            const q = $("search").value.trim().toLowerCase();
+            const f = $("filter").value;
+            return rows.filter(r => {
+                if (f !== "all" && r.attendance !== f) return false;
+                if (!q) return true;
+                return [r.full_name, r.phone, r.message, r.dietary_requirements]
+                    .some(v => (v || "").toLowerCase().includes(q));
+            });
+        }
+
+        function cell(tr, label, value, extraClass) {
+            const td = document.createElement("td");
+            td.dataset.label = label;
+            if (value instanceof Node) td.appendChild(value);
+            else {
+                td.textContent = value === null || value === undefined || value === "" ? "—" : String(value);
+                if (td.textContent === "—") td.classList.add("muted");
+            }
+            if (extraClass) td.classList.add(extraClass);
+            tr.appendChild(td);
+        }
+
+        function formatDate(iso) {
+            try {
+                return new Date(iso).toLocaleString("en-GB", { timeZone: "Africa/Cairo", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+            } catch { return iso; }
+        }
+
+        function render() {
+            const yes = rows.filter(r => r.attendance === "yes");
+            $("sResponses").textContent = rows.length;
+            $("sYes").textContent = yes.length;
+            $("sNo").textContent = rows.length - yes.length;
+            $("sGuests").textContent = yes.reduce((n, r) => n + guestsOf(r), 0);
+            $("sCeremony").textContent = yes.filter(r => eventsOf(r).includes("ceremony")).reduce((n, r) => n + guestsOf(r), 0);
+            $("sReception").textContent = yes.filter(r => eventsOf(r).includes("reception")).reduce((n, r) => n + guestsOf(r), 0);
+
+            const list = filtered();
+            $("count").textContent = list.length === rows.length ? `${rows.length} responses` : `Showing ${list.length} of ${rows.length}`;
+            const body = $("rows");
+            body.replaceChildren();
+            if (list.length === 0) {
+                const tr = document.createElement("tr");
+                const td = document.createElement("td");
+                td.colSpan = 9;
+                td.className = "empty";
+                td.textContent = rows.length ? "No responses match your search." : "No responses yet.";
+                tr.appendChild(td);
+                body.appendChild(tr);
+                return;
+            }
+            for (const r of list) {
+                const tr = document.createElement("tr");
+                cell(tr, "Name", r.full_name);
+                const pill = document.createElement("span");
+                pill.className = "pill " + (r.attendance === "yes" ? "yes" : "no");
+                pill.textContent = r.attendance === "yes" ? "Attending" : "Declined";
+                cell(tr, "Attending", pill);
+                cell(tr, "Guests", r.attendance === "yes" ? guestsOf(r) : "—");
+                cell(tr, "Events", eventsOf(r).map(e => EVENT_LABELS[e] || e).join(", "));
+                cell(tr, "Phone", r.phone);
+                cell(tr, "Dietary", r.dietary_requirements);
+                cell(tr, "Message", r.message);
+                cell(tr, "Received", formatDate(r.created_at));
+                const del = document.createElement("button");
+                del.type = "button";
+                del.className = "danger";
+                del.textContent = "Delete";
+                del.addEventListener("click", () => removeRow(r));
+                cell(tr, "", del);
+                body.appendChild(tr);
+            }
+        }
+
+        async function removeRow(r) {
+            if (!confirm(`Delete the response from "${r.full_name}"? This cannot be undone.`)) return;
+            const { error } = await db.rpc("delete_pola_merit_rsvp", { p_key: key, p_id: r.id });
+            if (error) { $("listMsg").textContent = "Could not delete: " + error.message; return; }
+            rows = rows.filter(x => x.id !== r.id);
+            render();
+        }
+
+        function csvEscape(v) {
+            let s = v === null || v === undefined ? "" : String(v);
+            if (/^[=+\-@]/.test(s)) s = "'" + s;
+            return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+        }
+
+        function exportCsv() {
+            const header = ["Name", "Attendance", "Guests", "Events", "Phone", "Dietary", "Message", "Received"];
+            const lines = [header.join(",")];
+            for (const r of filtered()) {
+                lines.push([
+                    r.full_name, r.attendance === "yes" ? "Attending" : "Declined",
+                    r.attendance === "yes" ? guestsOf(r) : 0,
+                    eventsOf(r).map(e => EVENT_LABELS[e] || e).join(" + "),
+                    r.phone, r.dietary_requirements, r.message, formatDate(r.created_at)
+                ].map(csvEscape).join(","));
+            }
+            const blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "rsvp-responses.csv";
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        $("refreshBtn").addEventListener("click", loadRows);
+        $("csvBtn").addEventListener("click", exportCsv);
+        $("search").addEventListener("input", render);
+        $("filter").addEventListener("change", render);
+
+        if (!key) {
+            show($("noKey"), true);
+        } else {
+            show($("dashView"), true);
+            loadRows();
+        }
+    }
+</script>
+</body>
+</html>
